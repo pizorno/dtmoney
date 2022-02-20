@@ -1,6 +1,6 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components';
 
-export const GlobalStyle  = createGlobalStyle `
+export const GlobalStyle = createGlobalStyle`
     :root {
         --background: #f0f2f5;
         --red: #E52E4D;
@@ -68,8 +68,22 @@ export const GlobalStyle  = createGlobalStyle `
         width: 100%;
         max-width: 576px;
         background: var(--background);
-        padding: true;
+        padding: 3rem;
         position: relative;
         border-radius: 0.24rem;
     }
-`
+
+    .react-modal-close {
+        position: absolute;
+        right: 1.5rem;
+        top: 1.5rem;
+        border: 0;
+        background: transparent;
+
+        transition: 0.2s;
+
+        &:hover {
+            filter: brightness(0.8);
+        }
+    }
+`;
